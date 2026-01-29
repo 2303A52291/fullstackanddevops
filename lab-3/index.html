@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Training Platform - Courses & Enrollments</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <h1>Online Training Platform (Courses & Enrollments)</h1>
+
+  <div class="container">
+    <!-- COURSES CARD -->
+    <div class="card">
+      <h2>📚 Course CRUD</h2>
+
+      <label for="courseTitle">Course Title</label>
+      <input id="courseTitle" type="text" placeholder="Eg: Full Stack Development" />
+
+      <label for="courseDesc">Course Description</label>
+      <input id="courseDesc" type="text" placeholder="Eg: Learn MERN + Sequelize Backend" />
+
+      <div class="btn-row">
+        <button class="btn-primary" id="courseBtn">Create Course</button>
+        <button class="btn-secondary" id="courseResetBtn">Reset</button>
+      </div>
+
+      <div class="list" id="courseList"></div>
+    </div>
+
+    <!-- ENROLLMENTS CARD -->
+    <div class="card">
+      <h2>🧾 Enrollment CRUD</h2>
+
+      <label for="enrollCourseSelect">Select Course</label>
+      <select id="enrollCourseSelect" title="Select a course for enrollment"></select>
+
+      <label for="studentName">Student Name</label>
+      <input id="studentName" type="text" placeholder="Eg: Kruthik Roshan" />
+
+      <label for="studentEmail">Student Email</label>
+      <input id="studentEmail" type="email" placeholder="Eg: kruthik@gmail.com" />
+
+      <div class="btn-row">
+        <button class="btn-primary" id="enrollBtn">Enroll Student</button>
+        <button class="btn-secondary" id="enrollResetBtn">Reset</button>
+      </div>
+
+      <div class="list" id="enrollList"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

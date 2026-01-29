@@ -4,31 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML - M.Shashidhar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            color: #555;
-            margin-top: 30px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        ul, ol {
-            color: #666;
-            line-height: 1.8;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Main Heading with Name -->
@@ -79,7 +55,7 @@
     
     <!-- Section 4: Image with Attributes -->
     <h2>Featured Image</h2>
-    <img src="https://miro.medium.com/v2/resize:fit:1388/0*TjCbOEt72lINFBlI.png" alt="Educational Content Image" width="300" height="200">
+    <img src="https://miro.medium.com/v2/resize:fit:1388/0*TjCbOEt72lINFBlI.png" alt="Educational Content" width="300" height="200">
     <p><em>This is a placeholder image with width: 300px and height: 200px</em></p>
     
     <hr>
@@ -88,7 +64,7 @@
     <h2>DevOps & Fullstack Development</h2>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R15f208kJzLvyVsz3lFu9CjLcvfHVDYWog&s" alt="DevOps Pipeline Illustration" width="600" height="400">
     <p><em>DevOps combines software development and IT operations for continuous integration and deployment</em></p>
-    <p style="color: #666; font-size: 14px;">
+    <p class="devops-description">
         DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). 
         It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
     </p>
@@ -98,12 +74,12 @@
     <!-- Section 5: Hyperlink to Educational Website -->
     <h2>Educational Resources</h2>
     <p>For more learning resources, visit:</p>
-    <a href="https://www.coursera.org" target="_blank">Coursera - Learn New Skills Online</a>
+    <a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera - Learn New Skills Online</a>
     
     <hr>
     
     <footer>
-        <p style="text-align: center; color: #999; margin-top: 40px;">
+        <p class="footer-text">
             &copy; 2026 M. Shashidhar | CSE (AIML) | SR University
         </p>
     </footer>

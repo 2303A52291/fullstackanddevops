@@ -66,12 +66,11 @@
     }
     nav ul {
       list-style: none;
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       display: flex;
       flex-wrap: wrap;
       max-width: 1200px;
-      margin: 0 auto;
     }
     nav li {
       margin: 0;
@@ -256,6 +255,12 @@
       outline: 3px solid var(--focus);
       outline-offset: 2px;
     }
+
+    /* Header subtitle */
+    .header-subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -265,7 +270,7 @@
   <header role="banner">
     <div class="header-content">
       <h1>Accessibility & Best Practices</h1>
-      <p style="margin: 0; color: var(--muted);">Demonstrating WCAG-compliant HTML</p>
+      <p class="header-subtitle">Demonstrating WCAG-compliant HTML</p>
     </div>
   </header>
 
@@ -285,7 +290,7 @@
     <section id="forms" class="section" aria-labelledby="forms-heading">
       <h2 id="forms-heading">Proper Use of Labels with Form Inputs</h2>
       
-      <div class="info-box" role="complementary">
+      <aside class="info-box" aria-label="Why Labels Matter">
         <h3>Why Labels Matter</h3>
         <ul>
           <li><strong>Screen Readers:</strong> Labels are announced to users with visual impairments</li>
@@ -407,7 +412,7 @@
     <section id="images" class="section" aria-labelledby="images-heading">
       <h2 id="images-heading">Images with Meaningful Alt Attributes</h2>
       
-      <div class="info-box" role="complementary">
+      <aside class="info-box" aria-label="Importance of Alt Text">
         <h3>Importance of Alt Text</h3>
         <ul>
           <li><strong>Screen Readers:</strong> Alt text is read aloud to users who can't see the image</li>

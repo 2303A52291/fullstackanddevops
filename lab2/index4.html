@@ -36,6 +36,9 @@
 
 		footer { margin-top: 24px; background: var(--card); border-top: 1px solid #e5e7eb; }
 		footer p { margin: 0; text-align: center; padding: 16px; color: var(--muted); }
+		.container-main { margin-top: 16px; }
+		.no-top-margin { margin-top: 0; }
+		aside h2 { margin-top: 0; }
 	</style>
 </head>
 <body>
@@ -52,13 +55,13 @@
 		</div>
 	</header>
 
-	<div class="container" style="margin-top:16px;">
+	<div class="container container-main">
 		<main>
 			<div class="left">
 				<section id="about" aria-labelledby="about-heading">
 					<h2 id="about-heading">About Me</h2>
 					<article>
-						<h3 class="muted" style="margin-top:0;">M. Shashidhar — CSE (AIML)</h3>
+						<h3 class="muted no-top-margin">M. Shashidhar — CSE (AIML)</h3>
 						<p>
 							I am a student passionate about DevOps and Fullstack development. This page
 							demonstrates semantic HTML structure and media embedding with accessible markup.
@@ -83,6 +86,8 @@
 							<video controls width="100%" poster="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop">
 								<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
 								<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+								<track kind="subtitles" src="flower-subtitles.vtt" srclang="en" label="English" />
+								<track kind="descriptions" src="flower-descriptions.vtt" srclang="en" label="English Descriptions" />
 								Your browser does not support the video tag.
 							</video>
 							<p class="muted">CC0 sample video from MDN.</p>
@@ -92,7 +97,7 @@
 
 				<section id="embed" aria-labelledby="embed-heading">
 					<h2 id="embed-heading">Embedded Content (YouTube)</h2>
-					<div class="iframe-wrap" role="region" aria-label="YouTube video">
+					<section class="iframe-wrap" aria-label="YouTube video">
 						<iframe
 							src="https://www.youtube.com/embed/OMn1kxwIUp8"
 							title="YouTube video player"
@@ -100,13 +105,13 @@
 							referrerpolicy="strict-origin-when-cross-origin"
 							allowfullscreen
 						></iframe>
-					</div>
+					</section>
 					<p class="muted">Replace the video ID to embed any other video.</p>
 				</section>
 			</div>
 
 			<aside aria-label="Quick Info">
-				<h2 style="margin-top:0;">Quick Info</h2>
+				<h2>Quick Info</h2>
 				<ul>
 					<li><strong>College:</strong> SR University</li>
 					<li><strong>Branch:</strong> CSE (AIML)</li>
